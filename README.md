@@ -44,24 +44,28 @@ email VARCHAR(100)
 ```sqlite
 sqlite> INSERT INTO persons(name,telno,email)
    ...> VALUES
-   ...> ('Michel',
+   ...> ('Eddie',
    ...> '023334444',
    ...> 'michel@daum.net')
    ...> ;
 sqlite> SELECT * FROM persons;
-|Michel|023334444|michel@daum.net
+|Eddie|023334444|michel@daum.net
 ```
 값을 update 해 보자
 ```sqlite
 sqlite> UPDATE persons SET email='test@gmail.com' 
    ...> WHERE
-   ...> name='Michel';
+   ...> name='Eddie';
 sqlite> SELECT * FROM persons;
-|Michel|023334444|test@gmail.com
+|Eddie|023334444|test@gmail.com
+```
+😅 잘 만드셨습니다.
+😪 근데 여태 만든 걸 이젠 몽땅 지울겁니다.    
+```sqlite
 sqlite> DELETE FROM
    ...> persons
    ...> WHERE
-   ...> name='Michel';
+   ...> name='Eddie';
 sqlite> .tables
 persons
 sqlite> SELECT * from persons
