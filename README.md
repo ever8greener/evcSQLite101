@@ -1,15 +1,15 @@
-# 기본sqlite3 사용법을 보여주기 위해 만든 페이지입니다.(맥 기준입니다)
+# 기본sqlite3 사용법
+## 기본 사용법을 보여주기 위해 만든 페이지입니다.(맥 기준입니다)
  
 artists-MacBook-Pro:~ artist$ `cd Documents`
  
 artists-MacBook-Pro:Documents artist$ `cd evcDB`
-
 artists-MacBook-Pro:evcDB artist$ ls
 
-###아래처럼 terminal 에서 생성합니다.
+###아래처럼 terminal ***.sql 파일을  생성합니다.
 
 artists-MacBook-Pro:evcDB artist$ `sqlite3 namecard.sql`
-### 이제 sqlite command line 이 보입니다
+### 이제 sqlite command line 이 시작됩니다
 
 SQLite version 3.8.10.2 2015-05-20 18:17:19
 Enter ".help" for usage hints.
