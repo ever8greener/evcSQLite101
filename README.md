@@ -14,7 +14,7 @@ artists-MacBook-Pro:evcDB artist$ `sqlite3 namecard.sql`
 SQLite version 3.8.10.2 2015-05-20 18:17:19
 Enter ".help" for usage hints.
 
-```sqlite
+```sql
 sqlite> CREATE TABLE persons
    ...> (
    ...> pk PRIMARY KEY,
@@ -29,7 +29,7 @@ persons
 ```
 위에서 보듯이 대소문자를 구별하게 되어 있다.
 
-```sqlite
+```sql
 sqlite> .schema persons
 CREATE TABLE persons
 (
@@ -40,8 +40,8 @@ email VARCHAR(100)
 );
 ```
 
-데이터를 넣어보자.
-```sqlite
+데이터를 넣어봅시다.
+```sql
 sqlite> INSERT INTO persons(name,telno,email)
    ...> VALUES
    ...> ('Eddie',
@@ -51,8 +51,8 @@ sqlite> INSERT INTO persons(name,telno,email)
 sqlite> SELECT * FROM persons;
 |Eddie|023334444|michel@daum.net
 ```
-값을 update 해 보자
-```sqlite
+값을 update 해 봅시다.
+```sql
 sqlite> UPDATE persons SET email='test@gmail.com' 
    ...> WHERE
    ...> name='Eddie';
@@ -61,7 +61,7 @@ sqlite> SELECT * FROM persons;
 ```
 😅 잘 만드셨습니다.
 😪 근데 여태 만든 걸 이젠 몽땅 지울겁니다.    
-```sqlite
+```sql
 sqlite> DELETE FROM
    ...> persons
    ...> WHERE
