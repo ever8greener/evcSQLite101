@@ -27,7 +27,7 @@ Error: unknown command or invalid arguments:  "TABLES". Enter ".help" for help
 sqlite> .tables
 persons
 ```
-위에서 보듯이 대소문자를 구별하게 되어 있다.
+위처럼  대소문자를 구별하는군요😁
 
 ```sql
 sqlite> .schema persons
