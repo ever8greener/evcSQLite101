@@ -6,7 +6,7 @@ artists-MacBook-Pro:~ artist$ `cd Documents`
 artists-MacBook-Pro:Documents artist$ `cd evcDB`
 artists-MacBook-Pro:evcDB artist$ ls
 
-###아래처럼 terminal ***.sql 파일을  생성합니다.
+###아래처럼 terminal 에서 `sql 파일` 을  생성합니다.
 
 artists-MacBook-Pro:evcDB artist$ `sqlite3 namecard.sql`
 ### 이제 sqlite command line 이 시작됩니다
